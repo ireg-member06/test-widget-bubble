@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Code Block</title>
+    <style>
+        body {
+            height: 200vh; /* For testing scrolling */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            padding: 20px;
+        }
+
+        #sticky-container {
+            position: fixed;
+            top: 20px; /* Adjust this to move it down */
+            left: 20px; /* Adjust this to move it horizontally */
+            background: #282c34;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            width: 300px;
+            overflow-x: auto;
+            font-family: "Courier New", monospace;
+            font-size: 14px;
+            border-left: 5px solid #61dafb;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="sticky-container">
+        <pre><code>
+// Sample JavaScript Code
+function greetUser(name) {
+    return "Hello, " + name + "!";
+}
+
+console.log(greetUser("Google Sites"));
+        </code></pre>
+    </div>
+
+</body>
+</html>
